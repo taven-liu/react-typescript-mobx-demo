@@ -1,0 +1,92 @@
+{
+  "name": "react-typescript-mobx-demo",
+  "version": "1.0.0",
+  "description": "A React Demo used by mobx,mobx-state-tree,typescript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taven-liu/react-typescript-mobx-demo.git"
+  },
+  "keywords": [
+    "react",
+    "mobx",
+    "typescript"
+  ],
+  "author": "taven_liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taven-liu/react-typescript-mobx-demo/issues"
+  },
+  "homepage": "https://github.com/taven-liu/react-typescript-mobx-demo#readme",
+  "scripts": {
+    "start": "webpack-dev-server --colors --progress --mode development",
+    "build": "webpack --mode production",
+    "lint-staged": "lint-staged"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@babel/register": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "@storybook/react": "^5.1.10",
+    "@types/classnames": "^2.2.9",
+    "@types/isomorphic-fetch": "^0.0.35",
+    "@types/ramda": "^0.26.19",
+    "@types/react": "^16.8.24",
+    "@types/react-dom": "^16.8.5",
+    "@types/react-router-dom": "^4.3.4",
+    "@types/styled-components": "^4.1.18",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "fork-ts-checker-webpack-plugin": "^1.5.0",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.0.3",
+    "lint-staged": "^9.2.1",
+    "mini-css-extract-plugin": "^0.8.0",
+    "mst-middlewares": "^3.14.1",
+    "prettier": "^1.18.2",
+    "prettier-eslint-cli": "^5.0.0",
+    "react-hot-loader": "^4.12.11",
+    "react-query-string-to-props": "^1.0.3",
+    "remotedev": "^0.2.9",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^1.0.0",
+    "terser-webpack-plugin": "^1.4.1",
+    "ts-loader": "^6.0.4",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "mobx": "^5.13.0",
+    "mobx-react": "^6.1.1",
+    "mobx-state-tree": "^3.14.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "todomvc-app-css": "^2.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
